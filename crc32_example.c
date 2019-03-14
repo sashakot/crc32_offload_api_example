@@ -1259,7 +1259,7 @@ int handle_write_req(struct resources *res,
 {
 	int rc = 0;
 
-	rc = reg_sig_mr(res, SIG_MODE_STRIP);
+	rc = reg_sig_mr(res, SIG_MODE_INSERT);
 	if (rc)
 		goto err_exit;
 
